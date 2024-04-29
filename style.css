@@ -19,6 +19,7 @@ strong {
   font-weight: 100;
 }
 header {
+  text-shadow: black 1px 2px;
   width: 100%;
   background-color: transparent;
   position: sticky;
@@ -41,7 +42,6 @@ header {
   height: 30px;
 }
 .navbar {
-  background: rgba(0, 0, 0, 0.5);
   height: 50px;
   width: 25%;
   /* padding: 0;
@@ -53,20 +53,26 @@ header {
   float: left;
   text-align: center;
   list-style: none;
-  font: normal bold 13px/1em Arial, Verdana, Helvetica;
+
   /* padding: 0;
   margin: 0; */
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .navbar a {
-  padding: 18px 0;
-
+  /* padding: 18px 0; */
+  text-shadow: black 1px 2px;
   text-decoration: none;
   color: white;
   display: block;
 }
+.AcceuilMenu {
+  font-family: "Allison", cursive;
+  font-weight: 100;
+
+  font-size: 30px;
+}
 .navbar li:hover a:hover {
-  background-color: transparent;
+  background-color: black;
 }
 .navbar li ul {
   display: none;
@@ -116,15 +122,17 @@ header {
   border-top: black 1px solid;
   width: 100%;
   padding-bottom: 200px;
+  margin-bottom: 380px;
 }
 .heroContent {
   position: absolute;
-  top: 45%;
+  top: 25%;
   background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+  color: white;
   text-align: center;
-  width: 70%;
+  width: 66%;
   left: 50%;
+  text-shadow: black 1px 2px;
   transform: translate(-50%);
 }
 #Video {
@@ -133,4 +141,34 @@ header {
   right: 0;
   bottom: 0;
   width: 100%;
+}
+.imgPlat {
+  height: 100px;
+  object-fit: cover;
+}
+.plats {
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.hplats {
+  text-shadow: green 1px 2px;
+}
+
+.descriptionPlats {
+}
+.cardPlats {
+  width: 45%;
+
+  box-shadow: green 2px 2px;
+  border-radius: 10px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  background-color: yellow;
+}
+#Nosplats {
+  width: 100%;
+  text-align: center;
 }

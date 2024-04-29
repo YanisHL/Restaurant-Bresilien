@@ -14,11 +14,12 @@ fetch("restaurantBresilien.json")
 function addProducts(data) {
   let plat = "";
   data.entreprise.plats.forEach((p) => {
-    plat += `<li>${p.nom} ${p.description} <img src="${p.image}" alt="${p.nom}"/> </li>`;
+    plat += `<section class="cardPlats"><h3 class="hplats alisson"> ${p.nom}</h3> <img class="imgPlat" src="${p.image}" alt="${p.nom}"/> <p class="descriptionPlats">${p.description} </p>
+    </section>`;
   });
   let serv = "";
   data.entreprise.services.forEach((s) => {
-    serv += `<li>${s.nom} ${s.description} <img src="${s.image}" alt=""/> </li>`;
+    serv += `<h3>${s.nom}</h3> <p>${s.description}</p> <img src="${s.image}" alt=""/>`;
   });
   let temoin = "";
   data.entreprise.temoignages.forEach((t) => {
@@ -35,12 +36,15 @@ function addProducts(data) {
    
     <strong> ${data.entreprise.nomCommercial}</strong> 
     <h1 >${data.entreprise.phraseAccroche}</h1>
+    <strong> ${data.entreprise.texteAppelAction}</strong>
     </div>
     </section>
-    ${data.entreprise.texteAppelAction}  
-    ${data.entreprise.avantagesClients}  
+     <div class="plats flex spacebetween">
+     <h2 id="Nosplats"> Nos Plats Vedettes</h2>
     ${plat}
+</div>
     ${serv}
+    ${data.entreprise.avantagesClients}
     ${temoin}
     
     
