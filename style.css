@@ -6,22 +6,24 @@
 .alisson {
   font-family: "Allison", cursive;
   font-weight: 100;
-  font-style: normal;
+
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
 h1 {
-  font-size: 70px;
-  font-weight: 100px;
+  font-size: 20px;
+}
+strong {
   font-family: "Allison", cursive;
+  font-size: 100px;
+  font-weight: 100;
 }
 header {
   width: 100%;
-  background: no-repeat;
   background-color: transparent;
-  background-image: url(https://imgs.search.brave.com/YbWud3K0sSD1lHcMF7RlPqskqgufIs-k8LhexatlJhw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHJhcmJhbmRl/cmFzLmVzL2ltYWdl/cy9iYW5kZXJhcy80/MDAvMzItYnJhc2ls/XzQwMHB4LmpwZw);
-  background-position: 50% 50%;
-  float: right;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 .center {
   align-items: center;
@@ -33,17 +35,17 @@ header {
   justify-content: space-between;
 }
 #wrap {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 30px;
-  z-index: 99;
-  align-items: center;
-  margin-top: 50px;
 }
 .navbar {
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  width: 25%;
+  /* padding: 0;
+  margin: 0; */
 }
 .navbar li {
   height: auto;
@@ -52,8 +54,8 @@ header {
   text-align: center;
   list-style: none;
   font: normal bold 13px/1em Arial, Verdana, Helvetica;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   background-color: transparent;
 }
 .navbar a {
@@ -69,8 +71,8 @@ header {
 .navbar li ul {
   display: none;
   height: auto;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 .navbar li:hover ul {
   display: block;
@@ -90,8 +92,12 @@ header {
 
 .reseau {
   list-style: none;
-  width: 5%;
-
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  margin: 10px;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
   height: auto;
   font-size: 30px;
   color: yellow;
@@ -103,7 +109,8 @@ header {
 .reseau li {
   list-style: none;
   padding: 5px 0px;
-  float: right;
+  padding: 0;
+  margin: 0;
 }
 .hero {
   border-top: black 1px solid;

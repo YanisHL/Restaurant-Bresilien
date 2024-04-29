@@ -29,11 +29,12 @@ function addProducts(data) {
 
   <section class="hero">
   <video autoplay muted loop id="Video">
-  <source src="istockphoto-1489479768-640_adpp_is.mp4" type="video/mp4">
+  <source src="11635-231758671_small.mp4" type="video/mp4">
   </video>
   <div class="heroContent">
+   
+    <strong> ${data.entreprise.nomCommercial}</strong> 
     <h1 >${data.entreprise.phraseAccroche}</h1>
-    <strong> ${data.entreprise.nomCommercial}</strong>
     </div>
     </section>
     ${data.entreprise.texteAppelAction}  
