@@ -1,0 +1,73 @@
+{
+    "entreprise": {
+        "nomCommercial": "Tudo de Bom - Restaurant Brésilien à Marseille",
+        "phraseAccroche": "Voyagez au cœur de la gastronomie brésilienne avec Tudo de Bom, votre restaurant à Marseille",
+        "texteAppelAction": "Dégustez nos saveurs uniques",
+        "avantagesClients": [
+            "Une cuisine brésilienne authentique et savoureuse",
+            "Ambiance chaleureuse pour une expérience culinaire conviviale",
+            "Ingrédients de qualité pour des plats exquis"
+        ],
+        "plats": [
+            {
+                "nom": "Feijoada",
+                "description": "Découvrez notre feijoada, un plat emblématique du Brésil. Un mélange délicieux de haricots noirs, de viande de porc et de saucisses, accompagné de riz et de légumes.",
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/feijoada.jpg?v=1714149705603"
+            },
+            {
+                "nom": "Moqueca de Peixe",
+                "description": "Succombez à la moqueca de peixe, un délicieux ragoût de poisson préparé avec du lait de coco, des tomates, des poivrons et des herbes fraîches. Un festin pour les amateurs de fruits de mer.",
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/moqueca-de-peixe.jpeg?v=1714149709655"
+            },
+            {
+                "nom": "Coxinha",
+                "description": "Craquez pour nos coxinhas, des petites bouchées de poulet assaisonné, enveloppées dans une pâte dorée et croustillante. Parfaites en entrée ou en apéritif.",
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/coxinha.jpg?v=1714149704407"
+            },
+            {
+                "nom": "Pão de Queijo",
+                "description": "Goûtez à nos pães de queijo, de délicieux petits pains au fromage brésiliens. Légers et moelleux, ils sont parfaits pour accompagner vos repas ou en snack.",
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/pao-de-queijo.webp?v=1714149712906"
+            },
+            {
+                "nom": "Caipirinha",
+                "description": "Rafraîchissez-vous avec notre caipirinha, un cocktail brésilien classique à base de cachaça, de sucre et de citron vert. L'accompagnement parfait pour vos plats.",
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/caipirinha.jpg?v=1714149839723"
+            }
+        ],
+        "services": [
+            {
+                "nom": "Événements Culturels",
+                "description": "Participez à nos événements culturels pour vivre l'ambiance du Brésil. Musique live, danse, et dégustation de plats authentiques pour une expérience immersive."
+            },
+            {
+                "nom": "Cours de Cuisine",
+                "description": "Apprenez à cuisiner les plats brésiliens avec nos cours de cuisine. Nos chefs vous guideront à travers les techniques et les saveurs de la cuisine brésilienne."
+            },
+            {
+                "nom": "Privatisation d'Espace",
+                "description": "Privatisez un espace pour vos événements spéciaux. Anniversaires, réunions d'affaires ou célébrations, nous créons une atmosphère brésilienne pour rendre votre occasion mémorable."
+            }
+        ],
+        "temoignages": [
+            {
+                "prenom": "Sophie",
+                "typeExperience": "Moqueca de Peixe",
+                "commentaire": "La moqueca de peixe chez Tudo de Bom est un véritable délice. Les saveurs sont authentiques, et le poisson est toujours frais. Une expérience culinaire à ne pas manquer !",
+              "note": 5
+            },
+            {
+                "prenom": "Lucas",
+                "typeExperience": "Cours de Cuisine",
+                "commentaire": "Les cours de cuisine chez Tudo de Bom sont une expérience éducative et amusante. J'ai appris à cuisiner mes plats brésiliens préférés. Une façon interactive de découvrir la culture culinaire.",
+              "note": 5
+            },
+            {
+                "prenom": "Camila",
+                "typeExperience": "Événement Culturel",
+                "commentaire": "Les événements culturels chez Tudo de Bom sont toujours animés et festifs. La musique, la danse, et la nourriture créent une ambiance brésilienne authentique. C'est comme un voyage au Brésil à chaque visite !",
+              "note": 4
+            }
+        ]
+    }
+}
