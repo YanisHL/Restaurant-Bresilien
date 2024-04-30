@@ -34,7 +34,7 @@ function addProducts(data) {
                 <li>${t.typeExperience}</li>
                 <li>${avis(t.note)}</div></li> 
                 </ul>
-                <p>${t.commentaire}</p>
+                <p class="commentaire">${t.commentaire}</p>
                 </div>`;
   });
   function avis(not) {
@@ -71,3 +71,85 @@ function addProducts(data) {
   console.log(data);
 }
 AOS.init();
+
+var map = L.map("map").setView([51.505, -0.09], 13);
+
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
+
+let coord = [43.3, 5.4];
+var redIcon = L.icon({
+  iconUrl: "/assets/leaf-red.png",
+  shadowUrl: "/assets/leaf-shadow.png",
+
+  iconSize: [38, 95], // size of the icon
+  shadowSize: [50, 64], // size of the shadow
+  iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62], // the same for the shadow
+  popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+});
+var marquer = L.marker(coord, { icon: redIcon })
+  .addTo(map)
+  .bindPopup("você está aqui !")
+  .openPopup();
+var circle = L.circle([43.3, 5.4], {
+  color: "red",
+  fillColor: "#f03",
+  fillOpacity: 0.5,
+  radius: 1000,
+}).addTo(map);
+var popup = L.popup();
+
+// function onMapClick(e) {
+//   popup
+//     .setLatLng(e.latlng)
+//     .setContent("Vous avez cliquer sur la carte en " + e.latlng.toString())
+//     .openOn(map);
+// }
+
+// map.on("click", onMapClick);
+
+function trierPlatsEtBoissons(jsonData) {
+  // Convertir la chaîne JSON en un tableau d'objets
+  const elements = restaurantBresilien.parse(jsonData);
+
+  // Créer des tableaux pour les plats et les boissons
+  const plats = [];
+  const boissons = [];
+
+  // Parcourir les éléments et les trier en fonction de leur type
+  elements.forEach((element) => {
+    if (element.type === "plat") {
+      plats.push(element);
+    } else if (element.type === "cocktail") {
+      plats.push(element);
+    }
+  });
+
+  // Créer une div pour afficher les plats et les boissons triés
+  const divResultat = document.createElement("div");
+  divResultat.innerHTML = "<h2>Plats :</h2><ul>";
+
+  // Ajouter les plats à la div
+  plats.forEach((plat) => {
+    divResultat.innerHTML += `<li>${plat.nom}</li>`;
+  });
+
+  divResultat.innerHTML += "</ul><h2>Boissons :</h2><ul>";
+
+  // Ajouter les boissons à la div
+  plats.forEach((boisson) => {
+    divResultat.innerHTML += `<li>${boisson.nom}</li>`;
+  });
+
+  divResultat.innerHTML += "</ul>";
+
+  // Ajouter la div au document
+  document.body.appendChild(divResultat);
+}
+
+// Exemple d'utilisation de la fonction
+
+trierPlatsEtBoissons(jsonData);

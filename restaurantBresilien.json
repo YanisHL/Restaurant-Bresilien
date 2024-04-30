@@ -12,28 +12,51 @@
             {
                 "nom": "Feijoada",
                 "description": "Découvrez notre feijoada, un plat emblématique du Brésil. Un mélange délicieux de haricots noirs, de viande de porc et de saucisses, accompagné de riz et de légumes.",
-              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/feijoada.jpg?v=1714149705603"
+                "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/feijoada.jpg?v=1714149705603",
+                "type":"plat"
             },
             {
                 "nom": "Moqueca de Peixe",
                 "description": "Succombez à la moqueca de peixe, un délicieux ragoût de poisson préparé avec du lait de coco, des tomates, des poivrons et des herbes fraîches. Un festin pour les amateurs de fruits de mer.",
-              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/moqueca-de-peixe.jpeg?v=1714149709655"
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/moqueca-de-peixe.jpeg?v=1714149709655",
+              "type":"plat"
             },
             {
                 "nom": "Coxinha",
                 "description": "Craquez pour nos coxinhas, des petites bouchées de poulet assaisonné, enveloppées dans une pâte dorée et croustillante. Parfaites en entrée ou en apéritif.",
-              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/coxinha.jpg?v=1714149704407"
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/coxinha.jpg?v=1714149704407",
+              "type":"plat"
             },
             {
                 "nom": "Pão de Queijo",
                 "description": "Goûtez à nos pães de queijo, de délicieux petits pains au fromage brésiliens. Légers et moelleux, ils sont parfaits pour accompagner vos repas ou en snack.",
-              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/pao-de-queijo.webp?v=1714149712906"
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/pao-de-queijo.webp?v=1714149712906",
+              "type":"plat"
             },
             {
                 "nom": "Caipirinha",
                 "description": "Rafraîchissez-vous avec notre caipirinha, un cocktail brésilien classique à base de cachaça, de sucre et de citron vert. L'accompagnement parfait pour vos plats.",
-              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/caipirinha.jpg?v=1714149839723"
-            }
+              "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/caipirinha.jpg?v=1714487628664",
+              "type":"cocktail"
+            },
+            {
+              "nom": "La Caïpiroska",
+              "description": "la Caïpiroska est une variante d’un des cocktails les plus populaires au monde, la fameuse Caïpirinha.",
+            "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/La%20Cai%CC%88piroska.webp?v=1714487629663",
+            "type":"cocktail"
+          },
+          {
+            "nom": "Le Mara Kuya",
+            "description": "Une boisson agréable qui rappelle le Brésil, à boire au printemps ou en été grâce aux notes de fruit de la passion et de basilic",
+          "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/Le%20Mara%20Kuya.webp?v=1714487630671",
+          "type":"cocktail"
+        },
+        {
+          "nom": "Le Bloody Carioca",
+          "description": "Mettre en valeur les saveurs de la cachaça. Tout comme pour la Caïpirinha et la Caïprioska, le cocktail Bloody Carioca est une variante du fameux cocktail Bloody Mary.",
+        "image":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/Le%20Bloody%20Carioca.jpg?v=1714487630142",
+        "type":"cocktail"
+      }
         ],
         "services": [
             {

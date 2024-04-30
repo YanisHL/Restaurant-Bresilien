@@ -25,6 +25,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 99;
+  height: 20px;
+}
+header img {
+  height: 100px;
 }
 .center {
   align-items: center;
@@ -207,14 +211,14 @@ header {
 .grndtemoin {
   height: 200px;
   display: flex;
-  margin: 25px;
+  margin: 10px;
   background-color: white;
 }
 .cardTemoin li {
   list-style: none;
   padding: 5px;
 }
-p {
+.commentaire {
   background-color: rgba(0, 0, 0, 0.5);
   height: 91px;
   justify-content: center;
@@ -226,4 +230,59 @@ h4 {
   background-color: black;
 }
 h2 {
+}
+footer {
+  height: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+#map {
+  height: 270px;
+  width: 30%;
+  box-shadow: 2px 1px green;
+}
+.divfooter {
+  background-image: url(./assets/isolated-2437775_1280.png);
+  height: 270px;
+  width: 30%;
+  margin-left: 251px;
+  text-align: center;
+  align-items: center;
+}
+#adresse {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: black 1px 2px;
+
+  margin-top: 70px;
+  font-family: "Allison", cursive;
+  font-weight: 100;
+
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+.reserver {
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 100px;
+
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+footer ul {
+  width: 20%;
+  color: black;
+  list-style: none;
+}
+footer ul li a {
+  list-style: none;
+  color: black;
+  font-style: normal;
+  text-decoration: none;
 }
