@@ -194,16 +194,17 @@ header img {
 }
 
 .temoin {
-  border: solid 1px black;
+  border: solid 1px #000000;
   width: 33%;
   text-align: center;
   margin: 10px;
-  background-image: url(./assets/brazil-flag-png-large.webp);
+  background-image: url(./assets/bbq-4373644_640.jpg);
   background-position: -60px -80px;
   color: white;
   text-shadow: black 1px 1px;
   height: 200px;
   font-size: 16px;
+  box-shadow: #999999 2px 1px;
 }
 .cardTemoin {
   background-color: rgba(0, 0, 0, 0.5);
@@ -232,22 +233,22 @@ h4 {
 h2 {
 }
 footer {
-  height: 270px;
+  height: 100px;
   display: flex;
   flex-wrap: wrap;
   margin: 5px 0px;
   padding: 5px 0px;
 }
 #map {
-  height: 270px;
-  width: 30%;
+  height: 250px;
+  width: 250px;
   box-shadow: 2px 1px green;
 }
 .divfooter {
   background-image: url(./assets/isolated-2437775_1280.png);
-  height: 270px;
+  height: 200px;
   width: 30%;
-  margin-left: 251px;
+  margin-left: 5px;
   text-align: center;
   align-items: center;
 }
@@ -257,7 +258,7 @@ footer {
   color: white;
   text-shadow: black 1px 2px;
 
-  margin-top: 70px;
+  margin-top: 30px;
   font-family: "Allison", cursive;
   font-weight: 100;
 

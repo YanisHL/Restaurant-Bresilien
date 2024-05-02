@@ -70,6 +70,7 @@ function addProducts(data) {
   // ${data.entreprise.avantagesClients}
   console.log(data);
 }
+
 AOS.init();
 
 var map = L.map("map").setView([51.505, -0.09], 13);
