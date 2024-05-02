@@ -128,6 +128,13 @@ header img {
   padding-bottom: 200px;
   margin-bottom: 380px;
 }
+.heroContent a {
+  text-decoration: none;
+  color: white;
+}
+.avantages {
+  padding: 10px;
+}
 .heroContent {
   position: absolute;
   top: 25%;
@@ -231,21 +238,32 @@ h4 {
   background-color: black;
 }
 h2 {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 90px;
+  text-align: center;
+  text-transform: uppercase;
 }
 footer {
-  height: 100px;
+  height: 260px;
   display: flex;
   flex-wrap: wrap;
-  margin: 5px 0px;
+  /* margin: 10px 0px; */
   padding: 5px 0px;
+  background-image: url(/assets/mediterranean-cuisine-2378758_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 50% 95%;
+  align-items: center;
 }
 #map {
-  height: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 240px;
   width: 250px;
-  box-shadow: 2px 1px green;
+  box-shadow: 2px 1px rgb(0, 0, 0);
 }
 .divfooter {
-  background-image: url(./assets/isolated-2437775_1280.png);
   height: 200px;
   width: 30%;
   margin-left: 5px;
@@ -257,7 +275,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-shadow: black 1px 2px;
-
+  box-shadow: 2px 1px rgb(0, 0, 0);
   margin-top: 30px;
   font-family: "Allison", cursive;
   font-weight: 100;
@@ -277,13 +295,32 @@ footer {
   margin-bottom: 10px;
 }
 footer ul {
-  width: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  width: 27%;
   color: black;
+  box-shadow: 2px 1px rgb(0, 0, 0);
+
   list-style: none;
+  margin: 10px 0px;
 }
 footer ul li a {
   list-style: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-style: normal;
   text-decoration: none;
+  padding: 0px 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: black 1px 2px;
+}
+.h2Footer {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  margin-bottom: 8%;
+  box-shadow: 2px 1px rgb(0, 0, 0);
+  text-shadow: black 1px 2px;
 }

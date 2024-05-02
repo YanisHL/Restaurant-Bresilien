@@ -57,15 +57,19 @@ function addProducts(data) {
    
     <strong> ${data.entreprise.nomCommercial}</strong> 
     <h1 >${data.entreprise.phraseAccroche}</h1>
-    <strong> ${data.entreprise.texteAppelAction}</strong>
+    <strong>  <a href="plats.html"> ${data.entreprise.texteAppelAction}</a></strong>
+    <p class="avantages">"${data.entreprise.avantagesClients}"</p>
     </div>
     </section>
-
-
-   <div class="grndtemoin" data-aos="zoom-in-up">
+    <section data-aos="zoom-in-up">
+<div>
+<h2> Qu'est ce qu'ils en ont pensé ?:</h2>
+</div>
+   <div class="grndtemoin" >
+ 
     ${temoin}
   </div>
-
+  </section>
   `;
   // ${data.entreprise.avantagesClients}
   console.log(data);
@@ -112,45 +116,45 @@ var popup = L.popup();
 
 // map.on("click", onMapClick);
 
-function trierPlatsEtBoissons(jsonData) {
-  // Convertir la chaîne JSON en un tableau d'objets
-  const elements = restaurantBresilien.parse(jsonData);
+// function trierPlatsEtBoissons(jsonData) {
+//   // Convertir la chaîne JSON en un tableau d'objets
+//   const elements = restaurantBresilien.parse(jsonData);
 
-  // Créer des tableaux pour les plats et les boissons
-  const plats = [];
-  const boissons = [];
+//   // Créer des tableaux pour les plats et les boissons
+//   const plats = [];
+//   const boissons = [];
 
-  // Parcourir les éléments et les trier en fonction de leur type
-  elements.forEach((element) => {
-    if (element.type === "plat") {
-      plats.push(element);
-    } else if (element.type === "cocktail") {
-      plats.push(element);
-    }
-  });
+//   // Parcourir les éléments et les trier en fonction de leur type
+//   elements.forEach((element) => {
+//     if (element.type === "plat") {
+//       plats.push(element);
+//     } else if (element.type === "cocktail") {
+//       plats.push(element);
+//     }
+//   });
 
-  // Créer une div pour afficher les plats et les boissons triés
-  const divResultat = document.createElement("div");
-  divResultat.innerHTML = "<h2>Plats :</h2><ul>";
+//   // Créer une div pour afficher les plats et les boissons triés
+//   const divResultat = document.createElement("div");
+//   divResultat.innerHTML = "<h2>Plats :</h2><ul>";
 
-  // Ajouter les plats à la div
-  plats.forEach((plat) => {
-    divResultat.innerHTML += `<li>${plat.nom}</li>`;
-  });
+//   // Ajouter les plats à la div
+//   plats.forEach((plat) => {
+//     divResultat.innerHTML += `<li>${plat.nom}</li>`;
+//   });
 
-  divResultat.innerHTML += "</ul><h2>Boissons :</h2><ul>";
+//   divResultat.innerHTML += "</ul><h2>Boissons :</h2><ul>";
 
-  // Ajouter les boissons à la div
-  plats.forEach((boisson) => {
-    divResultat.innerHTML += `<li>${boisson.nom}</li>`;
-  });
+//   // Ajouter les boissons à la div
+//   plats.forEach((boisson) => {
+//     divResultat.innerHTML += `<li>${boisson.nom}</li>`;
+//   });
 
-  divResultat.innerHTML += "</ul>";
+//   divResultat.innerHTML += "</ul>";
 
-  // Ajouter la div au document
-  document.body.appendChild(divResultat);
-}
+//   // Ajouter la div au document
+//   document.body.appendChild(divResultat);
+// }
 
-// Exemple d'utilisation de la fonction
+// // Exemple d'utilisation de la fonction
 
-trierPlatsEtBoissons(jsonData);
+// trierPlatsEtBoissons(jsonData);
