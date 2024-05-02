@@ -71,12 +71,13 @@ function addProducts(data) {
   </div>
   </section>
   `;
+
   // ${data.entreprise.avantagesClients}
   console.log(data);
 }
 
 AOS.init();
-
+// CARTES
 var map = L.map("map").setView([51.505, -0.09], 13);
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -106,55 +107,3 @@ var circle = L.circle([43.3, 5.4], {
   radius: 1000,
 }).addTo(map);
 var popup = L.popup();
-
-// function onMapClick(e) {
-//   popup
-//     .setLatLng(e.latlng)
-//     .setContent("Vous avez cliquer sur la carte en " + e.latlng.toString())
-//     .openOn(map);
-// }
-
-// map.on("click", onMapClick);
-
-// function trierPlatsEtBoissons(jsonData) {
-//   // Convertir la chaîne JSON en un tableau d'objets
-//   const elements = restaurantBresilien.parse(jsonData);
-
-//   // Créer des tableaux pour les plats et les boissons
-//   const plats = [];
-//   const boissons = [];
-
-//   // Parcourir les éléments et les trier en fonction de leur type
-//   elements.forEach((element) => {
-//     if (element.type === "plat") {
-//       plats.push(element);
-//     } else if (element.type === "cocktail") {
-//       plats.push(element);
-//     }
-//   });
-
-//   // Créer une div pour afficher les plats et les boissons triés
-//   const divResultat = document.createElement("div");
-//   divResultat.innerHTML = "<h2>Plats :</h2><ul>";
-
-//   // Ajouter les plats à la div
-//   plats.forEach((plat) => {
-//     divResultat.innerHTML += `<li>${plat.nom}</li>`;
-//   });
-
-//   divResultat.innerHTML += "</ul><h2>Boissons :</h2><ul>";
-
-//   // Ajouter les boissons à la div
-//   plats.forEach((boisson) => {
-//     divResultat.innerHTML += `<li>${boisson.nom}</li>`;
-//   });
-
-//   divResultat.innerHTML += "</ul>";
-
-//   // Ajouter la div au document
-//   document.body.appendChild(divResultat);
-// }
-
-// // Exemple d'utilisation de la fonction
-
-// trierPlatsEtBoissons(jsonData);
