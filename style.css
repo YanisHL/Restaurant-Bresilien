@@ -240,39 +240,42 @@ h4 {
 h2 {
   background-color: rgb(255, 255, 255);
   padding: 10px;
-  margin-top: 90px;
   text-align: center;
   text-transform: uppercase;
 }
 footer {
-  height: 260px;
-  display: flex;
-  flex-wrap: wrap;
-  /* margin: 10px 0px; */
-  padding: 5px 0px;
-  background-image: url(/assets/mediterranean-cuisine-2378758_640.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   background-position: 50% 95%;
+  background-image: url(/assets/mediterranean-cuisine-2378758_640.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.background {
+  height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 10px 0px; */
+  width: 100%;
+  padding: 0px 10%;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #map {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 240px;
+  height: 200px;
   width: 250px;
   box-shadow: 2px 1px rgb(0, 0, 0);
 }
 .divfooter {
   height: 200px;
-  width: 30%;
   margin-left: 5px;
   text-align: center;
   align-items: center;
+  width: 30%;
 }
 #adresse {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+
   color: white;
   text-shadow: black 1px 2px;
   box-shadow: 2px 1px rgb(0, 0, 0);
@@ -295,11 +298,10 @@ footer {
   margin-bottom: 10px;
 }
 footer ul {
-  background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
-  width: 27%;
+
   color: black;
-  box-shadow: 2px 1px rgb(0, 0, 0);
+  box-shadow: 1px 1px rgb(0, 0, 0);
 
   list-style: none;
   margin: 10px 0px;
@@ -318,9 +320,10 @@ footer ul li a {
 }
 .h2Footer {
   color: rgb(255, 255, 255);
+  box-shadow: 1px 1px rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
-  height: 50px;
-  margin-bottom: 8%;
-  box-shadow: 2px 1px rgb(0, 0, 0);
   text-shadow: black 1px 2px;
+}
+.ulfooter {
+  margin-left: 9%;
 }
