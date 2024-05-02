@@ -36,6 +36,9 @@ header img {
 .flex {
   display: flex;
 }
+.transp {
+  background-color: transparent;
+}
 .spacebetween {
   justify-content: space-between;
 }
@@ -365,4 +368,57 @@ footer ul li a {
   /* margin-bottom: 100px; */
   background-color: rgb(0, 0, 0, 0.5);
   text-transform: none;
+}
+
+/* SERVICE */
+.videoserv {
+  border: 1px black solid;
+  border-radius: 10px;
+  position: relative;
+  left: 65%;
+  height: 237px;
+}
+.cardservice {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nomdesc {
+  height: 20%;
+  width: 100%;
+}
+.h3serv {
+  font-family: "Allison", cursive;
+  font-weight: 100;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: black 1px 2px;
+  border: solid black 1px;
+  margin: 10px 10px;
+  width: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 50%;
+}
+.contentservice {
+  background-image: url(assets/augustine-wong-T0BYurbDK_M-unsplash1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pserv {
+  font-family: "Allison", cursive;
+  font-weight: 100;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: black 1px 2px;
+  border: solid black 1px;
+  margin: 10px 10px;
+  width: 50%;
+  padding: 5px;
+  background-color: rgb(0, 0, 0, 0.5);
 }
