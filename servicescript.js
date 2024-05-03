@@ -14,7 +14,7 @@ function addProducts(data) {
   data.entreprise.services.forEach((s) => {
     serv += `<div class="cardservice flex spacebetween">
     <h3 class="h3serv">${s.nom}</h3> 
-    <div class="nomdesc">
+    <div class="nomdesc" >
               <p class="pserv">${s.description}</p> 
               
               <video autoplay muted loop class="videoserv" src="${s.image}" alt=""> </video>
@@ -22,7 +22,9 @@ function addProducts(data) {
               <div>`;
   });
 
-  document.querySelector(".contentservice").innerHTML += `${serv}`;
+  document.querySelector(
+    ".contentservice"
+  ).innerHTML += ` <div  data-aos="fade-up-left"> ${serv}</div>`;
 }
 
 AOS.init();
