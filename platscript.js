@@ -15,12 +15,11 @@ function addProducts(data) {
   let plat = "";
   data.entreprise.plats.forEach((p) => {
     plat += `<section class="cardPlats"><h3 class="hplats alisson"> ${p.nom}</h3> <img class="imgPlat" data-aos="zoom-in" src="${p.image}" alt="${p.nom}"/> <p data-aos="zoom-in" class="descriptionPlats" 
-    >${p.description} </p>
-  </section>`;
+    >${p.description} </p></section>`;
   });
   document.querySelector(".contentplats").innerHTML += `
 
-  <div class="plats flex spacebetween" data-aos="flip-right">
+  <div class="plats flex spacebetween">
   
  ${plat}
 </div>

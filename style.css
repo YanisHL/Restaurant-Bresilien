@@ -226,6 +226,16 @@ footer {
   background-image: url(/assets/mediterranean-cuisine-2378758_640.jpg);
   background-color: rgba(0, 0, 0, 0.5);
 }
+footer h6 {
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  color: white;
+  text-shadow: #000000 1px 2px;
+}
+footer h6 i {
+  padding-right: 5px;
+}
 .background {
   height: 260px;
   display: flex;
@@ -315,6 +325,76 @@ footer ul li a {
 }
 
 /* PARTIE PLATS */
+.presentation {
+  background-image: url(./assets/4268.jpg);
+  margin: -20px 0px;
+  background-position: 10% 70%;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.presentation h3 {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin: 50px 20%;
+  background-color: rgb(0, 0, 0, 0.7);
+
+  font-family: "Allison", cursive;
+  font-weight: 100;
+  text-shadow: #000000 1px 2px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+.pPresentation {
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 50px 20%;
+}
+.presentation div {
+  margin: 0px 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.presentation div p {
+  padding: 10px;
+  margin: 0px 50px;
+  text-align: center;
+  color: white;
+  text-shadow: black 1px 2px;
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: rgb(0, 0, 0) 2px 1px;
+  width: 50%;
+}
+.imgP {
+  box-shadow: rgb(0, 0, 0) 2px 1px;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  margin: 0px 50px;
+  object-fit: cover;
+}
+.finP {
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  color: white;
+  text-shadow: black 1px 2px;
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: rgb(0, 0, 0) 2px 1px;
+  width: 50%;
+}
+
 /* h4 {
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: black 1px 2px;
@@ -333,6 +413,7 @@ footer ul li a {
   border-radius: 20px;
 }
 .plats {
+  background-color: rgb(255, 255, 255);
   flex-wrap: wrap;
   width: 100%;
 }
@@ -354,6 +435,7 @@ footer ul li a {
   margin: auto;
 }
 .cardPlats {
+  box-shadow: rgb(0, 0, 0) 1px 2px 2px;
   width: 45%;
   background-image: url(./assets/leaves-6590394_640.png);
   background-position: 83% 53%;
