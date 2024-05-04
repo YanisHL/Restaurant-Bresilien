@@ -57,7 +57,7 @@ function addProducts(data) {
    
     <strong> ${data.entreprise.nomCommercial}</strong> 
     <h1 >${data.entreprise.phraseAccroche}</h1>
-    <strong>  <a href="plats.html"> ${data.entreprise.texteAppelAction}</a></strong>
+    <strong>  <a class="btnAccroche" href="plats.html"> ${data.entreprise.texteAppelAction} ! </a></strong>
     <p class="avantages">"${data.entreprise.avantagesClients}"</p>
     </div>
     </section>

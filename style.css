@@ -12,10 +12,11 @@
 }
 h1 {
   font-size: 20px;
+  margin: 10px 0px;
 }
 strong {
   font-family: "Allison", cursive;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 100;
 }
 header {
@@ -134,6 +135,15 @@ header img {
 .heroContent a {
   text-decoration: none;
   color: white;
+}
+.btnAccroche {
+  /* border: solid black 1px; */
+  padding: 0px 30px 5px 30px;
+  margin: 10px 0px 0px 0px;
+  box-shadow: white 1px 2px 40px;
+  background-color: rgb(180, 180, 180, 0.5);
+  text-shadow: black -4px 2px 0px;
+  border-radius: 10px;
 }
 .avantages {
   padding: 10px;
@@ -425,4 +435,47 @@ footer ul li a {
   padding: 5px;
   background-color: rgb(0, 0, 0, 0.5);
   box-shadow: hsl(0, 0%, 0%) 3px 2px;
+}
+.reserv {
+  border: black solid 3px;
+  width: 100%;
+  text-align: center;
+  font-family: "Allison", cursive;
+  text-shadow: black 1px 2px;
+  color: white;
+  font-weight: 100;
+  font-size: 100px;
+  /* margin-bottom: 100px; */
+  background-color: rgb(0, 0, 0, 0.5);
+  text-transform: none;
+}
+form {
+  margin: 10px 0px 100px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.margin {
+  margin: auto;
+}
+input {
+  background-color: #ffffff;
+  box-shadow: #000000 1px 2px;
+  border-radius: 20px;
+  width: 6%;
+  margin-right: 15px;
+  padding: 10px;
+}
+label {
+  text-align: right;
+  font-family: "Allison", cursive;
+  text-shadow: black 1px 2px;
+  color: white;
+  font-weight: 100;
+  font-size: 40px;
+  /* margin-bottom: 100px; */
+  background-color: transparent;
+  text-transform: none;
+  width: 60%;
+  margin-left: -110px;
 }
